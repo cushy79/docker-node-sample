@@ -14,6 +14,7 @@ publish:
     email: cushy79@gmail.com
     repo: cushy79/node
     tag: $$BRANCH
+    storage_driver: vfs
 
 notify:
   slack:
