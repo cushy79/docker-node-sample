@@ -10,7 +10,7 @@ build:
 publish:
   docker:
     username: cushy79
-    password: $$DRON_PASSWORD
+    password: $$DOCKERHUB_PASS
     email: cushy79@gmail.com
     repo: cushy79/node
     tag: $$BRANCH
