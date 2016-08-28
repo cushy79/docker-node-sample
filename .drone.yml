@@ -19,7 +19,7 @@ publish:
 notify:
   slack:
     webhook_url: $$SLACK_WEBHOOK_URL
-    channel: dev
+    channel: tmp
     username: drone
     template: >
       build #{{ build.number }} finished with a {{ build.status }} status
