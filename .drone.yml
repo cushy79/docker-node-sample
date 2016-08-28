@@ -5,4 +5,12 @@ build:
     - apt-get -qq install sqlite3
     - sqlite3 -init test/data.sql /drone/test.db
     - npm install
-    - npm test 
+    - npm test
+
+publish:
+  docker:
+    username: cushy79
+    password: $$DRON_PASSWORD
+    email: cushy79@gmail.com
+    repo: cushy79/node
+    tag: $$BRANCH
