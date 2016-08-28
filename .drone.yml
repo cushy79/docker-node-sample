@@ -20,6 +20,7 @@ publish:
     repo: node
     tag: latest
     file: Dockerfile
+    storage_driver: vfs
 
 notify:
   slack:
