@@ -15,6 +15,11 @@ publish:
     repo: cushy79/node
     tag: $$BRANCH
     storage_driver: vfs
+  ecr:
+    region: ap-northeast-1
+    repo: node
+    tag: latest
+    file: Dockerfile
 
 notify:
   slack:
