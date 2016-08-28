@@ -1,0 +1,8 @@
+build:
+  image: node:5.0.0
+  commands:
+    - apt-get -qq update
+    - apt-get -qq install sqlite3
+    - sqlite3 -init test/data.sql /drone/test.db
+    - npm install
+    - npm test 
